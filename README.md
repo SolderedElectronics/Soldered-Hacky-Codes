@@ -12,10 +12,12 @@ Steps:
 2. Make a folder
 3. Inside the folder make a readme file
 4. Copy your code inside the folder
-5. Clean up code (build files, .vscode files should not exist, could use .gitignore file).
-6. Commit
-7. Push
-8. Done :)
+5. Follow the suggested folder structure if something else than code needs to be added
+6. Clean up code (build files, .vscode files should not exist, could use .gitignore file)
+7. Make sure that the code is well documented
+8. Commit
+9. Push
+10. Done :)
 
 # README file
 Every folder must have readme with:
@@ -32,11 +34,11 @@ Every folder must have readme with:
 
 ✅ Hardware connections (schematic can be added if needed)
 
-✅ Comments of the limitations of the code, or if something is not working as it should, or something is not done (TODO).
+✅ Comments on the limitations of the code, or if something is not working as it should, or something is not done (TODO).
 
 # Other files
-If for some reason with sketch some other files must be added, make folder named "extras".
-If images are needed, inside "extras" make "images" folder.
+If for some reason with a sketch, some other files must be added, make a folder named "extras".
+If images are needed, inside "extras" make an "images" folder.
 
 Folder structure
 ```
