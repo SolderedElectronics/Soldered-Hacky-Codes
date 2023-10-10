@@ -1,6 +1,6 @@
 # Soldered Hacky Codes
 Useful codes by Soldered Electronics that can speed up the testing and development process.
-Use them at your own risk. See the [note](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/edit/main/README.md#%EF%B8%8Fnote%EF%B8%8F) at the bottom!
+Use them at your own risk. See the [note](https://github.com/SolderedElectronics/Soldered-Hacky-Codes/tree/main#%EF%B8%8Fnote%EF%B8%8F) at the bottom!
 
 # Useage of this repo - Submitting
 - Every code must be inside its own folder. The folder name must be representative of what the code does. Folder names "Test1234" are **NOT ALLOWED** and will be removed!
