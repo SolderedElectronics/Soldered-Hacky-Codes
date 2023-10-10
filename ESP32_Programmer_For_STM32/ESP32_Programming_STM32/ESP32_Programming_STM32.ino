@@ -92,10 +92,19 @@ void processCmd(int _cmd)
         // Read command. Start address = 0x08000000, len = 128 (must be multiple of 4 bytes!).
         case 6:
         {
-            uint8_t buffer[256]; // 128 data bytes + ACK
+            // Buffer for the data.
+            uint8_t buffer[129]; // 128 data bytes + ACK
+
+            // Clear the array.
             memset(buffer, 0, sizeof(buffer));
+
+            // Send message to the serial.
             Serial.printf("Read command, start address=0x08000000, len = %d\r\n", sizeof(buffer));
+
+            // Try to read the data.
             uint8_t commandResult = stm.readChunk(buffer, 0x08000000, sizeof(buffer) - 1);
+
+            // Check the success. If the read command was succ. print out bytes in HEX.
             if (commandResult == STM32ACK)
             {
                 Serial.println("read ok");
@@ -114,11 +123,15 @@ void processCmd(int _cmd)
         // Read bigger memory chunk than 255 bytes.
         case 7:
         {
+            // Buffer for the data. Store 2048 bytes (no ACK).
             uint8_t readBuffer[2048];
+
+            // Try to read 2048 bytes from the STM32.
             if (stm.readLarge(readBuffer, 0x08000000, sizeof(readBuffer)) == STM32ACK)
             {
                 Serial.println("Read large chunk ok");
 
+                // Print out the data on the serial.
                 for (int i = 0; i < sizeof(readBuffer); i++)
                 {
                     Serial.printf("0x%02X ", readBuffer[i]);
@@ -140,6 +153,7 @@ void processCmd(int _cmd)
     }
 }
 
+// Print all commands.
 void printAllCommands()
 {
     Serial.println("Select command by sending a number (CR and LF doesn't need to be turned on):");
