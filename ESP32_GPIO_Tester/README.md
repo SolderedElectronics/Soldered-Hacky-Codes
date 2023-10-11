@@ -7,7 +7,7 @@ Upload the code on the ESP32 dev board that needs to be tested, open the serial 
 # Connections
 There are no any (except USB communication)
 
-# Tweeks
+# Tweaks
 Can modify allowed pin in the LUT called "gpios" and "gpiosInputOnly" and can change the baud rate in Serial.begin().
 
 # Notes

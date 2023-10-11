@@ -13,7 +13,7 @@ It allows ESP32 to program STM32 with UART using an STM32 built-in bootloader.
 # Connections
 ESP32 GPIO4 is UART RX pin and ESP32 GPIO5 is TX. For the STM32 side, check Application Note AN2606.
 
-## Tweeks
+## Tweaks
 - In .h file, you can set start address of the flash, as well as timeouts for the response
 - in .ino file you can change Baud tate (but do not change the parity!) and UART pins.
 
