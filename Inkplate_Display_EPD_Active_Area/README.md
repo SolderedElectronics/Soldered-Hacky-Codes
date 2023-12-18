@@ -13,7 +13,7 @@ Connect the USB to the Board to upload the code and ePaper to the appropriate co
 ## Tweaks
 - In the .ino file, near the top, with the OUTLINE_COLOR change the color of the outline box (0 = Black, 7 = White).
 - In the .ino file, near the top, with the OUTLINE_SIZE set the thickness of the outline box (in pixels).
-- In the .ino file, near the top, with the SQUARE_SIZE set the size of the squares in the four corners (in pixels).
+- In the .ino file, in the Serial.begin(115200) change the baud rate (currently set to 115200 bauds).
 
 # Notes
-- No notes.
+- This code only works for ESP32. To use it with the Arduino, EEPROM.begin() does not have any arguments, and EEPROM.commit() must be removed.
