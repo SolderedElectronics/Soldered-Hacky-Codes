@@ -21,7 +21,7 @@ void setup()
   // Fill the memory with defined value.
   for (int i = 0; i < EEPROM_SIZE; i++)
   {
-      EEPROM.write(i, 0);
+      EEPROM.write(i, EEPROM_FILL_VALUE);
   }
 
   // Send changes to the EEPROM.
