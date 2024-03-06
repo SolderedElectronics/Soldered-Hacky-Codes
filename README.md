@@ -40,6 +40,28 @@ Every folder must have readme with:
 If for some reason with a sketch, some other files must be added, make a folder named "extras".
 If images are needed, inside "extras" make an "images" folder.
 
+# List
+## Arduino_UART_Test
+Enables the test of the UART pins by echoing back everything that has been received.
+
+## ESP32_EEPROM_Clean
+Simple sketch to clear ESP32 EEPROM.
+
+## ESP32_GPIO_Tester
+Simple sketch to test GPIOs of the ESP32 by setting its state or by reading the state of the pin (input only pins).
+
+## ESP32_Programmer_For_STM32
+Sketch for programming STM32 by using STM32 HW built-in bootloader with the UART communication.
+
+## I2C_Scanner
+Simple Arduino I2C scanner.
+
+## Inkplate_Display_EPD_Active_Area
+The sketch shows the edge of the ePaper active area. Useful for checking screen placement in the custom case or to check data corruption/Image shift on the ePaper itself.
+
+## Inkplate_Vcom_Programming
+Enables simple VCOM voltage programming in the ePaper PMIC (TPS65186).
+
 Folder structure
 ```
 This repo
