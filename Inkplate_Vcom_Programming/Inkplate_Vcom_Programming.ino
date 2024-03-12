@@ -7,7 +7,7 @@
 // Create Inkplate object.
 Inkplate display(INKPLATE_1BIT);
 
-// Wanted VCOM voltage. For Inkplate5 panel use -2.45V.
+// Wanted VCOM voltage. For Inkplate5 panel use -2.35V.
 double vcomVoltage = -2.35;
 
 // "Secret key" for proceed VCOM programming.
@@ -28,7 +28,7 @@ void setup()
     display.pinModeInternal(IO_INT_ADDR, display.ioRegsInt, 6, INPUT_PULLUP);
 
     // Send message to notify the user to proceed with the VCOM programming.
-    Serial.printf("Send %s to proceed with VCOM programming (it's case sensitive!): \r\n", secretKey);
+    Serial.printf("Send [%s] to proceed with VCOM programming (it's case sensitive!): \r\n", secretKey);
 
     // Wait until you got the data from the Serial.
     while (Serial.available() <= 0);
