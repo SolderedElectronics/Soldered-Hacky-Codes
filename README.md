@@ -62,6 +62,10 @@ The sketch shows the edge of the ePaper active area. Useful for checking screen 
 #### • Inkplate_Vcom_Programming
 Enables simple VCOM voltage programming in the ePaper PMIC (TPS65186).
 
+#### • Inkplate Display Refresh Speed Test
+By using this code you can check the refresh times of the Inkplate board (useful while tweaking clean sequence or waveforms). If will show display refresh times for every mode available.
+
+
 Folder structure
 ```
 This repo
