@@ -65,6 +65,8 @@ Enables simple VCOM voltage programming in the ePaper PMIC (TPS65186).
 #### • Inkplate Display Refresh Speed Test
 By using this code you can check the refresh times of the Inkplate board (useful while tweaking clean sequence or waveforms). If will show display refresh times for every mode available.
 
+### • Dasduino_Boards_Fade
+This sketch allows you fade Built-In Dasduino WS2812 LED with user defined color and speed.
 
 Folder structure
 ```
